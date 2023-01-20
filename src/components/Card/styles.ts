@@ -19,5 +19,9 @@ export const Wrapper = styled.div<WrapperProps>`
       border-radius: 50%;
       padding: 8px;
     }
+    
+    span {
+      margin-left: ${theme.sizes[12]};
+    }
   `}
 `

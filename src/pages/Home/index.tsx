@@ -1,26 +1,25 @@
-import { Package, ShoppingCart, Timer, Coffee } from 'phosphor-react'
+import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
 
 import { Card } from '../../components/Card'
 import { Header } from '../../components/Header'
-import { Container } from '../../components/Container'
 
 import CoffeeBanner from '../../assets/banner.svg'
 
 import { DefaultTheme } from '../../styles'
-import { BannerSection, Info, Image } from '../../styles/pages/Home'
+import * as S from '../../styles/pages/Home'
 
 const Home = () => {
   return (
-    <Container>
+    <S.Container>
       <Header />
-      <BannerSection>
-        <Info>
+      <S.BannerSection>
+        <S.Info>
           <h1>Encontre o café perfeito para qualquer hora do dia</h1>
           <p>
             Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
             hora
           </p>
-          <div>
+          <S.CardListContent>
             <Card
               icon={<ShoppingCart color={DefaultTheme.colors.white} />}
               label='Compra simples e segura'
@@ -41,13 +40,25 @@ const Home = () => {
               label='O cafe chega fresquinho até você'
               color={DefaultTheme.colors['purple-500']}
             />
-          </div>
-        </Info>
-        <Image>
+          </S.CardListContent>
+        </S.Info>
+        <S.Image>
           <img src={CoffeeBanner} alt='' />
-        </Image>
-      </BannerSection>
-    </Container>
+        </S.Image>
+      </S.BannerSection>
+      <S.CoffeeSection>
+        <h2>Nossos cafés</h2>
+        <S.CoffeeList>
+        <div>
+          <img src="img_avatar.png" width={50} height={50} alt="Avatar" />
+          <div>
+            <h4><b>John Doe</b></h4>
+            <p>Architect & Engineer</p>
+          </div>
+        </div>
+        </S.CoffeeList>
+      </S.CoffeeSection>
+    </S.Container>
   )
 }
 

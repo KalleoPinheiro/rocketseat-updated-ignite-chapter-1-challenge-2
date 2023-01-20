@@ -1,5 +1,16 @@
 import styled, { css } from 'styled-components'
 
+export const Container = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 ${theme.sizes[160]};
+  `}
+`
+
 export const BannerSection = styled.section`
   ${({ theme }) => css`
     width: 100%;
@@ -7,13 +18,16 @@ export const BannerSection = styled.section`
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     gap: ${theme.sizes[52]};
-    place-items: center;
+    margin: ${theme.sizes[94]} 0;
   `}
 `
 
 export const Info = styled.div`
   ${({ theme }) => css`
-    width: 100%;
+  width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 
     h1 {
       font-family: ${theme.font.family.baloo};
@@ -21,7 +35,7 @@ export const Info = styled.div`
       font-weight: 800;
       font-size: 48px;
       line-height: 62px;
-      color: #272221;
+      color: ${theme.colors['gray-900']};
     }
 
     p {
@@ -30,16 +44,21 @@ export const Info = styled.div`
       font-weight: 400;
       font-size: 20px;
       line-height: 36px;
-      color: #403937;
+      color: ${theme.colors['gray-800']};
       font-stretch: 100;
       margin-top: ${theme.sizes[16]};
     }
+  `}
+`
 
-    div {
-      display: grid;
+export const CardListContent = styled.div`
+  ${({ theme }) => css`
+  display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-    }
+      grid-row-gap: ${theme.sizes[20]};
+      grid-column-gap: ${theme.sizes[40]}; 
+      margin-top: ${theme.sizes[60]};
   `}
 `
 
@@ -49,5 +68,21 @@ export const Image = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+  `}
+`
+export const CoffeeSection = styled.section`
+  ${({ theme }) => css`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: ;
+  `}
+`
+
+export const CoffeeList = styled.div`
+  ${({ theme }) => css`
+    width: 100%;
+    display: flex;
   `}
 `

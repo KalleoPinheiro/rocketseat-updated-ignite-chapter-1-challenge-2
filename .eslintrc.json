@@ -25,6 +25,7 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "comma-dangle": "off",
-    "space-before-function-paren": "off"
+    "space-before-function-paren": "off",
+    "no-tabs": "off"
   }
 }

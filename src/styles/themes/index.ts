@@ -22,7 +22,7 @@ export const DefaultTheme = {
   },
   sizes: {
     4: '0.4rem',
-    6: '0.65rem',
+    6: '0.6rem',
     8: '0.8rem',
     10: '1rem',
     12: '1.2rem',
@@ -33,10 +33,13 @@ export const DefaultTheme = {
     24: '2.4rem',
     32: '3.2rem',
     38: '3.8rem',
+    40: '4rem',
     45: '4.5rem',
     46: '4.6rem',
     48: '4.8rem',
     52: '5.2rem',
+    60: '6rem',
+    94: '9.4rem',
     160: '16.0rem',
   },
 } as const
