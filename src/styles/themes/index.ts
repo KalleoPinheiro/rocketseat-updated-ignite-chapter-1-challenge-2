@@ -18,7 +18,7 @@ export const DefaultTheme = {
 		white: '#FFFFFF',
 	},
 	font: {
-		family: { baloo: 'Baloo 2', roboto: 'Roboto' },
+		family: { cursive: 'Baloo 2', sans: 'Roboto' },
 	},
 	sizes: {
 		4: '0.4rem',
@@ -40,6 +40,8 @@ export const DefaultTheme = {
 		52: '5.2rem',
 		60: '6rem',
 		94: '9.4rem',
+		120: '12.0rem',
 		160: '16.0rem',
+		256: '25.6rem',
 	},
 } as const

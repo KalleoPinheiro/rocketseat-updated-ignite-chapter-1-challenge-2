@@ -15,9 +15,9 @@ export const Wrapper = styled.div<WrapperProps>`
 			align-items: center;
 			width: 32px;
 			height: 32px;
-			background-color: ${color};
 			border-radius: 50%;
 			padding: 8px;
+			background-color: ${theme.colors[color]};
 		}
 
 		span {

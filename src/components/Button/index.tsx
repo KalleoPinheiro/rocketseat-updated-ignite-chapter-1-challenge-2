@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 
 type ButtonSize = 'small' | 'medium'
-type ButtonVariant = 'primary' | 'secondary'
+type ButtonVariant = 'primary' | 'secondary' | 'tertiary'
 
 export type ButtonProps = {
 	label?: string

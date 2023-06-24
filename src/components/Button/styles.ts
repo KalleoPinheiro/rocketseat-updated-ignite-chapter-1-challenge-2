@@ -41,6 +41,14 @@ const variantModifiers = {
 			background-color: ${theme.colors['gray-500']};
 		}
 	`,
+	tertiary: (theme: DefaultTheme) => css`
+		color: ${theme.colors['gray-700']};
+		background-color: ${theme.colors['gray-400']};
+
+		&:hover {
+			background-color: ${theme.colors['gray-500']};
+		}
+	`,
 }
 
 export const Wrapper = styled.button<WrapperProps>`
@@ -81,6 +89,13 @@ const IconButtonVariantModifiers = {
 	secondary: (theme: DefaultTheme) => css`
 		background-color: ${theme.colors['yellow-100']};
 	`,
+	tertiary: (theme: DefaultTheme) => css`
+		background-color: ${theme.colors['gray-400']};
+
+		&:hover {
+			background-color: ${theme.colors['gray-500']};
+		}
+	`,
 }
 
 export const IconButtonWrapper = styled.button<IconButtonWrapperProps>`
@@ -107,7 +122,7 @@ export const IconButtonWrapper = styled.button<IconButtonWrapperProps>`
 				max-width: auto;
 				right: -8px;
 				top: -8px;
-				font-family: ${theme.font.family.roboto};
+				font-family: ${theme.font.family.sans};
 			}
 		}
 

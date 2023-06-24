@@ -1,0 +1,42 @@
+export const coffeList = [
+	{
+		id: '1',
+		image: 'https://via.placeholder.com/120x120',
+		title: 'Expresso Tradicional',
+		description: 'O tradicional café feito com água quente e grãos moídos',
+		category: 'tradicional',
+		amount: '9,90',
+	},
+	{
+		id: '2',
+		image: 'https://via.placeholder.com/120x120',
+		title: 'Expresso Tradicional',
+		description: 'O tradicional café feito com água quente e grãos moídos',
+		category: 'tradicional',
+		amount: '9,90',
+	},
+	{
+		id: '3',
+		image: 'https://via.placeholder.com/120x120',
+		title: 'Expresso Tradicional',
+		description: 'O tradicional café feito com água quente e grãos moídos',
+		category: 'tradicional',
+		amount: '9,90',
+	},
+	{
+		id: '4',
+		image: 'https://via.placeholder.com/120x120',
+		title: 'Expresso Tradicional',
+		description: 'O tradicional café feito com água quente e grãos moídos',
+		category: 'tradicional',
+		amount: '9,90',
+	},
+	{
+		id: '5',
+		image: 'https://via.placeholder.com/120x120',
+		title: 'Expresso Tradicional',
+		description: 'O tradicional café feito com água quente e grãos moídos',
+		category: 'tradicional',
+		amount: '9,90',
+	},
+]

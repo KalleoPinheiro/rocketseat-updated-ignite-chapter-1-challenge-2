@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
 
 		body {
 			margin: 0;
-			font-family: 'Roboto', sans-serif;
+			font-family: '${theme.font.family.sans}', sans;
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
 			font-size: ${theme.sizes[16]};
@@ -37,11 +37,12 @@ export const GlobalStyles = createGlobalStyle`
 		h4,
 		h5,
 		h6 {
-			font-family: '${theme.font.family.baloo}', cursive;
+			font-family: '${theme.font.family.cursive}', cursive;
 		}
 
-		p {
-			font-family: '${theme.font.family.roboto}', sans-serif;
+		p,
+		span {
+			font-family: '${theme.font.family.sans}', sans;
 		}
 
 		button {

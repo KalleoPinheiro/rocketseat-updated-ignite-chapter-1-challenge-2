@@ -30,7 +30,6 @@ export const Info = styled.div`
 		flex-direction: column;
 
 		h1 {
-			font-family: ${theme.font.family.baloo};
 			font-style: normal;
 			font-weight: 800;
 			font-size: 48px;
@@ -39,7 +38,6 @@ export const Info = styled.div`
 		}
 
 		p {
-			font-family: ${theme.font.family.roboto};
 			font-style: normal;
 			font-weight: 400;
 			font-size: 20px;
@@ -76,13 +74,17 @@ export const CoffeeSection = styled.section`
 		height: 100%;
 		display: flex;
 		flex-direction: column;
-		margin-top: ;
+		margin-top: ${theme.sizes[20]};
 	`}
 `
 
 export const CoffeeList = styled.div`
 	${({ theme }) => css`
 		width: 100%;
-		display: flex;
+		margin-top: ${theme.sizes[32]};
+		display: grid;
+		grid-template-columns: repeat(auto-fill, ${theme.sizes[256]});
+		gap: ${theme.sizes[32]};
+		place-content: center;
 	`}
 `
